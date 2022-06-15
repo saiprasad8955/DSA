@@ -1,6 +1,6 @@
 // Count largest sum of consecutive number
 // [1,2,3,4,3,2,5,6,7,8]
-
+// Largest
 // arr.length - number + 1 ====>>> loop iteration
 
 function largestSumOfConsecutiveNumber(arr, num) {
@@ -15,7 +15,7 @@ function largestSumOfConsecutiveNumber(arr, num) {
             for (let j = 0; j < num; j++) {
                 console.log("InnerL " + i + "OuterL " + j)
                 temp = temp + arr[i + j]
-            }
+            } 
 
             if (temp > max) {
                 max = temp;
