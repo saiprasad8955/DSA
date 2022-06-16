@@ -23,3 +23,10 @@ function uniqueNumbersInArray(array) {
 }
 const numbers = uniqueNumbersInArray([2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 12]);
 console.log(numbers);
+
+// console.log(''.charCodeAt(0))
+
+// const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+// var cnt = Array.from({length: 4}, (_, i) => 0);
+// var arr12 = range('A'.charCodeAt(0), 'Z'.charCodeAt(0), 1).map(x => String.fromCharCode(x));
+// console.log(arr12)

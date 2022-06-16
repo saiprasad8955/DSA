@@ -24,3 +24,4 @@ function isAnagram(str1, str2) {
 
 const hero = isAnagram('hello', 'llheo')
 console.log(hero);
+

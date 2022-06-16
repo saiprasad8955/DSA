@@ -24,3 +24,16 @@ function ispalindrome(str) {
 // let str = 'madam'
 const palindrome = ispalindrome("Able was I ere I saw Elba");
 console.log(palindrome)
+
+
+
+
+
+
+
+
+
+
+
+
+

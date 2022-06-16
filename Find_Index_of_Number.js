@@ -32,3 +32,18 @@ function searchALog(arr, num) {
 
 const result = searchALog([1, 2, 3, 4, 5, 6, 7, 8, 9], 3);
 console.log("result", result);
+
+
+
+
+
+
+let left = 0;
+let right = arr.length - 1;
+while (left <= right) {
+    let midIndex = Math.floor((left + right) / 2);
+    if (arr[midIndex] < num) midIndex += 1
+    else if (arr[midIndex] > num) midIndex -= 1
+    else return midIndex
+}
+return -1

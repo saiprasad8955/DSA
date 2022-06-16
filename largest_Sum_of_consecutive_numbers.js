@@ -13,7 +13,7 @@ function largestSumOfConsecutiveNumber(arr, num) {
         for (let i = 0; i < arr.length - num + 1; i++) {
             let temp = 0;
             for (let j = 0; j < num; j++) {
-                console.log("InnerL " + i + "OuterL " + j)
+                console.log("InnerL " + i + " OuterL " + j)
                 temp = temp + arr[i + j]
             } 
 
@@ -25,7 +25,7 @@ function largestSumOfConsecutiveNumber(arr, num) {
     }
 }
 
-const result = largestSumOfConsecutiveNumber([1, 2, 3, 4, 3, 2, 5, 6, 7, 8], 4)
+const result = largestSumOfConsecutiveNumber([1, 2, 3, 4, 3, 2, 5, 6, 7, 8], 5)
 console.log(result)
 
 
@@ -33,14 +33,15 @@ console.log(result)
 
 
 
-// function sum(arr){
-//     let sum = 0;
-//     for(let ele in arr){
-//         // console.log(arr[ele])
-//         sum  = sum  + arr[ele]
-//         // console.log(sum)
+// function trueValue(arr){
+// // return arr.filter((x)=>x==true).length   
+// let count =0; 
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i] == true){
+//             count++;
+//         }
 //     }
-//     return sum
+//     return count;
 // }
-// const results = sum([1, 2, 3, 4, 3, 2, 5, 6, 7, 8])
+// const results = trueValue([true])
 // console.log(results)
