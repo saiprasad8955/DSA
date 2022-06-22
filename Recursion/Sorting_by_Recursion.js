@@ -19,7 +19,7 @@ function sorting(arr) {
     // first check sorted array or not
     if (isSorted(arr)) {
         sortedArray = arr;
-        return;
+        return ;
     }
     else if (arr[i] < arr[j]) {
         i++;
