@@ -11,6 +11,5 @@ function twoSum(nums, target) {
     }
 }
 
-
 let sum = twoSum([2, 7, 11, 15], 9);
 console.log(sum)

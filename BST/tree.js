@@ -13,3 +13,6 @@ class BST {
 }
 let myTree = new BST(1);
 console.log(myTree);
+
+
+  

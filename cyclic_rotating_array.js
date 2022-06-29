@@ -33,11 +33,6 @@ console.log(reverse(arr));
 // console.log(reverse(arr.slice(0, 2)))
 // console.log(reverse(arr.slice(2)))
 
-
-
-
-
-
 function rotate(arr, d) {
     let array = reverse(arr);                           // reverse whole array
     let rotatedElements = reverse(array.slice(0, d));   // reverse d ele
