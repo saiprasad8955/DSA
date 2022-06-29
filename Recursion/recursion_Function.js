@@ -16,38 +16,38 @@
 
 
 // ================================return upto n 
-// function recur(n){
-//     if(n==0) return console.log('Stopped')
-//     else{
-//         console.log(n);
-//         n--;
-//         recur(n)
-//     }
-// }
+function recur(n) {
+    if (n == 0) return console.log('Stopped')
+    else {
+        console.log(n);
+        n--;
+        return recur(n);
+    }
+}
 
-// console.log(recur(54))
+console.log(recur(54))
 
 
 // =========================== sum of numbers upto n
-// function sum(n) {
-//     if (n == 1){ return 1 ;}
-//     else { return n + sum(n - 1);}
-// }
+function sum(n) {
+    if (n == 1) { return 1; }
+    else { return n + sum(n - 1); }
+}
 
-// console.log(sum(2))
+console.log(sum(2))
 
 // =============================Sum of even numbers
-function sumEven(n){
+function sumEven(n) {
 
     // base condition 
-    if(n <= 0){
+    if (n <= 0) {
         return "NO SUM"
-    }else if(n == 1){
+    } else if (n == 1) {
         return 0
     }
 
     // recursive call
-    return 2*n-2 + sumEven(n-1);
+    return 2 * n - 2 + sumEven(n - 1);
 }
 
 console.log(sumEven(10))
