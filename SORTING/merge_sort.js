@@ -29,8 +29,9 @@ function mergeSort(array) {
     let left = array.slice(0, mid)
     let right = array.slice(mid)
 
+
     return merge(mergeSort(left), mergeSort(right))
 }
 
 
-mergeSort([3, 1, 4, 2])
+console.log(mergeSort([3, 1, 4, 2]));

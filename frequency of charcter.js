@@ -1,6 +1,3 @@
-
-
-
 // CHECK FREQUENCY OF CHARCTER
 
 // console.log(Math.floor(Math.log(5)/Math.log(2)) + 1 )
