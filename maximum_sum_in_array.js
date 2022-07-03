@@ -13,29 +13,24 @@
 // if (arr[i] > secondlargest) { secondlargest = arr[i] }
 // }
 
-function sum(arr) {
-    let largest       = Math.max()
-    let secondlargest = Math.max()
+let arr = [12, 23, 34, 3, 56, 89];
 
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] > largest) {
-            largest       = arr[i];
-            secondlargest = largest
+function maxSumOfTwoEle(arr) {
+    let max = Math.max()
+    let secondmax = Math.max()
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            secondmax = max;
         } else {
-            if (arr[i] > secondlargest) {
-                secondlargest = arr[i]
-                // console.log(secondlargest);
+            if (arr[i] > secondmax) {
+                secondmax = arr[i]
             }
         }
-
     }
-    return (largest + secondlargest)
+
+    return ( max + secondmax )
 }
 
-
-
-let arr = [12, 23, 34, 3, 56, 89];
-console.log(sum(arr));
-console.log(Math.min());
-console.log(Math.max());
-
+console.log(maxSumOfTwoEle(arr));

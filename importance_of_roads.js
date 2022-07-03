@@ -21,7 +21,7 @@ var maximumImportance = function (n, arr) {
     let map2 = [...map.entries()].sort((a, b) => b[1] - a[1])
     console.log(map2);
 
-    // assigning values
+    // Assigning Values
     let sum = 0;
     for (let i = 0; i < map2.length; i++) {
         sum += (map2[i][1] * n);
