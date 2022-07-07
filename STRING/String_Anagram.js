@@ -22,7 +22,8 @@ function isAnagram(str1, str2) {
     // console.log(count)
 
     return true;
-};          // linear time complexity O(n)
+};          
+// linear time complexity O(n)
 
 const hero = isAnagram('hello', 'llheo')
 console.log(hero);

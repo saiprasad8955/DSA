@@ -1,12 +1,6 @@
 const arr = [2, 3, 4, 10, 40];
 // console.log(arr[7]);
 
-
-
-
-
-
-
 function binarySearch(arr, start, end, num) {
     if (end >= start) {
         // find middle elemnt of array

@@ -2,7 +2,7 @@
 // ignoring case sensitivity
 // 'madam'   =========>>>>>> 'madam'
 // 'abadaba'   =========>>>>>> 'abadaba'
-// 'Able was I ere I saw Elba'   =========>>>>>> 'Able was I ere I saw Elba'
+// 'Able was I ere I saw Elba'  =========>>>>>> 'Able was I ere I saw Elba'
 
 
 function ispalindrome(str) {

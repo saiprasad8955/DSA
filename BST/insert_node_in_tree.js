@@ -13,6 +13,8 @@ class Node {
     }
 }
 
+const newNode = new Node(7);
+
 
 class IBST {
     insert(value) {

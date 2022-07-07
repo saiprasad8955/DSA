@@ -9,4 +9,4 @@ function generateOtp(otp_length) {
     return OTP;
 }
 
-console.log(generateOtp());
+console.log(generateOtp(6));
