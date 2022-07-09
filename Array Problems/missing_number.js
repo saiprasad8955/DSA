@@ -39,10 +39,6 @@ function missingN1(arr) {
 
 console.log(missingN1([1, 6, 8, 9]));
 
-
-console.log([5,4,2,1,6, 9].sort());
-
-
 // get subsequence of a string
 // 2) KPC PROBLEM
 // 1. You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone.
