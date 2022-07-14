@@ -57,7 +57,7 @@ class linkedList {
             this.tail = null;
         }
         let temp = this.head;
-        this.head = this.head.next;
+        this.head = temp.next;
         temp.next = null;
         this.length--;
         return temp;
@@ -152,11 +152,78 @@ class linkedList {
 }
 
 
-let LL = new linkedList(0);
-LL.push(1);
-LL.push(2);
-LL.push(3);
-LL.push(4);
+// let LL = new linkedList(0);
+// LL.push(1);
+// LL.push(2);
+// LL.push(3);
+// LL.push(4);
 
 
 
+
+class nodu {
+    constructor(val) {
+        this.val = val;
+        this.next = null;
+
+    }
+}
+class ll {
+    constructor() {
+        this.head = null;
+        this.head = null;
+        this.length = 0;
+    }
+
+    push(val) {
+        let n = new nodu(val)
+        if (this.head == null) {
+            this.head = n;
+            this.tail = n
+        } else {
+            this.tail.next = n;
+            this.tail = n;
+        }
+        this.length++;
+        return this;
+    }
+
+
+    pop() {
+        if (this.length == 0) return undefined;
+        if (this.length === 1) {
+            this.head = null;
+            this.tail = null;
+        }
+        let temp = this.head;
+        let previous = temp;
+        while (temp.next !== null) {
+            previous = temp;
+            temp = temp.next;
+        }
+        previous.next = null;
+        this.tail = previous;
+        this.length--;
+        return temp;
+    }
+
+
+    get(index){
+        if(index < 0 || index >= this.length) return undefined;
+        let temp = this.head;
+        for(let i = 0; i <index;i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+}
+
+
+const newLL = new ll();
+newLL.push(6);
+newLL.push(2);
+newLL.push(3);
+newLL.push(4);
+// newLL.pop()
+let heavy = newLL.get(2)
+console.log(heavy);

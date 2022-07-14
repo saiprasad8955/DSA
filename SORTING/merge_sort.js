@@ -38,8 +38,6 @@ function mergeSort(array) {
 // ANOTHER METHOD
 
 // function merge(array1, array2) {
-    
-
 //     let combined = []
 //     let i = 0
 //     let j = 0
