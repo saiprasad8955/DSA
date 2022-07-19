@@ -16,7 +16,11 @@ class Node {
 const newNode = new Node(7);
 
 
-class IBST {
+class BST {
+    constructor(){
+        this.root = null;
+    }
+
     insert(value) {
         const newNode = new Node(value)
         if (this.root === null) {
@@ -45,7 +49,7 @@ class IBST {
     }
 }
 
-let myTree = new IBST();
+let myTree = new BST();
 myTree.insert(47)
 myTree.insert(21)
 myTree.insert(76)
@@ -53,3 +57,4 @@ myTree.insert(18)
 
 myTree.insert(52)
 myTree.insert(82)
+console.log(BST);

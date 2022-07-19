@@ -1,5 +1,9 @@
+// stacks are used to implement functions, parsers, expression evaluation, and backtracking algorithms. 
+// we implement stacks using LL
+// LL having operation of constant TC from unshift and shift. ===> O(1)
+// SO WE IMPLEMENT STACKS FROM start THEN WE GOT CONSTANT TC.
 class Node {
-    constructor(value){
+    constructor(value) {
         this.value = value
         this.next = null
     }
@@ -14,19 +18,19 @@ class Stack {
 
     push(value) {
         const newNode = new Node(value)
-        if(this.length === 0) {
+        if (this.length === 0) {
             this.top = newNode
         } else {
             newNode.next = this.top
             this.top = newNode
         }
         this.length++
-        return this 
+        return this
     }
 
     pop() {
-        if(this.length === 0) return undefined
-        
+        if (this.length === 0) return undefined
+
         let temp = this.top
         this.top = this.top.next
         temp.next = null
