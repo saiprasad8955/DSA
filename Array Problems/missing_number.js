@@ -26,7 +26,7 @@ function missingN1(arr) {
         // console.log(hash[el]);
 
     }
-    let res = new Array();
+    let res = [];
     // console.log(hash);
 
     for (let i = 1; i < maxNumber; i++) {

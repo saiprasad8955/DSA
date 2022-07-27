@@ -31,3 +31,33 @@ function uniqueEle(arr) {
     return [...set]
 }
 console.log(uniqueEle(arr));
+
+
+
+
+var findDuplicate = function(nums) {
+    let map = new Map();
+    for(let el of nums){
+        if(map.has(el)){
+            map.set( el, map.get(el) + 1 );
+        }else{
+            map.set( el, 1 );
+        }
+    }
+    let res = new Array();
+    for(let el of map){
+        console.log(el[1]!==1);
+        
+        if(el[1] !== 1){
+            res.push(el[0])
+        }
+    }
+    
+    return res
+};
+
+console.log(findDuplicate([1,3,4,2,2]));
+
+
+console.log(Math.sign());
+console.log(Math.abs());

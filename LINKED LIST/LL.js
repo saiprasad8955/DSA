@@ -8,7 +8,7 @@ class Node {
 
 
 // CREATING A EMPTY LL
-class linkedList {
+class LinkedList {
     constructor(value) {
         let newNode = new Node(value);
         this.head = newNode;
@@ -152,7 +152,8 @@ class linkedList {
 }
 
 
-// let LL = new linkedList(0);
+
+// let LL = new LinkedList(0);
 // LL.push(1);
 // LL.push(2);
 // LL.push(3);
@@ -160,21 +161,20 @@ class linkedList {
 
 
 
-
 class nodu {
     constructor(val) {
         this.val = val;
         this.next = null;
-
+        
     }
 }
-class ll {
+class LL {
     constructor() {
         this.head = null;
         this.head = null;
         this.length = 0;
     }
-
+    
     push(val) {
         let n = new nodu(val)
         if (this.head == null) {
@@ -187,8 +187,8 @@ class ll {
         this.length++;
         return this;
     }
-
-
+    
+    
     pop() {
         if (this.length == 0) return undefined;
         if (this.length === 1) {
@@ -206,8 +206,8 @@ class ll {
         this.length--;
         return temp;
     }
-
-
+    
+    
     get(index){
         if(index < 0 || index >= this.length) return undefined;
         let temp = this.head;
@@ -219,7 +219,7 @@ class ll {
 }
 
 
-const newLL = new ll();
+const newLL = new LL();
 newLL.push(6);
 newLL.push(2);
 newLL.push(3);
@@ -227,3 +227,5 @@ newLL.push(4);
 // newLL.pop()
 let heavy = newLL.get(2)
 console.log(heavy);
+
+module.exports = LL
