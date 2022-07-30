@@ -1,4 +1,4 @@
-
+// REVERSE LINKED LIST
 reverseList = (head) => {
     let curr = head;
     let prev = null, next;

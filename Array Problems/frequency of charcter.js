@@ -23,11 +23,3 @@ for (let i = 0; i < arr.length; i++) {
 console.log(freqObj)
 console.log(maxChar)
 console.log(maxOcc)
-
-
-
-
-
-
-
-

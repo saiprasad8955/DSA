@@ -161,62 +161,62 @@ class LinkedList {
 
 
 
-class nodu {
-    constructor(val) {
-        this.val = val;
-        this.next = null;
-        
-    }
-}
-class LL {
-    constructor() {
-        this.head = null;
-        this.head = null;
-        this.length = 0;
-    }
-    
-    push(val) {
-        let n = new nodu(val)
-        if (this.head == null) {
-            this.head = n;
-            this.tail = n
-        } else {
-            this.tail.next = n;
-            this.tail = n;
-        }
-        this.length++;
-        return this;
-    }
-    
-    
-    pop() {
-        if (this.length == 0) return undefined;
-        if (this.length === 1) {
-            this.head = null;
-            this.tail = null;
-        }
-        let temp = this.head;
-        let previous = temp;
-        while (temp.next !== null) {
-            previous = temp;
-            temp = temp.next;
-        }
-        previous.next = null;
-        this.tail = previous;
-        this.length--;
-        return temp;
-    }
-    
-    
-    get(index){
-        if(index < 0 || index >= this.length) return undefined;
-        let temp = this.head;
-        for(let i = 0; i <index;i++){
-            temp = temp.next;
-        }
-        return temp;
-    }
-}
+// class nodu {
+//     constructor(val) {
+//         this.val = val;
+//         this.next = null;
+
+//     }
+// }
+// class LL {
+//     constructor() {
+//         this.head = null;
+//         this.tail = null;
+//         this.length = 0;
+//     }
+
+//     push(val) {
+//         let n = new nodu(val)
+//         if (this.head == null) {
+//             this.head = n;
+//             this.tail = n
+//         } else {
+//             this.tail.next = n;
+//             this.tail = n;
+//         }
+//         this.length++;
+//         return this;
+//     }
+
+
+//     pop() {
+//         if (this.length == 0) return undefined;
+//         if (this.length === 1) {
+//             this.head = null;
+//             this.tail = null;
+//         }
+//         let temp = this.head;
+//         let previous = temp;
+//         while (temp.next !== null) {
+//             previous = temp;
+//             temp = temp.next;
+//         }
+//         previous.next = null;
+//         this.tail = previous;
+//         this.length--;
+//         return temp;
+//     }
+
+
+//     get(index){
+//         if(index < 0 || index >= this.length) return undefined;
+//         let temp = this.head;
+//         for(let i = 0; i <index;i++){
+//             temp = temp.next;
+//         }
+//         return temp;
+//     }
+// }
 
 
 const newLL = new LL();

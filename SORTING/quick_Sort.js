@@ -1,3 +1,4 @@
+// QUICK SORT
 let arr = [5, 3, 7, 6, 2, 9]
 
 function quicksort(arr, left = 0, right = arr.length - 1) {

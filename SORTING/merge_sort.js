@@ -1,3 +1,4 @@
+// MERGE SORT
 function merge(array1, array2) {
     let combined = []
     let i = 0
