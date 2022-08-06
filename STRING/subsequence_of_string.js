@@ -1,4 +1,4 @@
-// subsequence
+// Subsequence of a String
 
 function subsequence(input, output) {
     if (input.length === 0) {

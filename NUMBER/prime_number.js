@@ -1,15 +1,8 @@
-// function isPrime(num) {
-//     for (let i = 2; i <= parseInt(Math.sqrt(num)); i++) {
-//         if (num % i === 0) {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+// Check prime
 
 function isPrime(num) {
-    if(num < 2){
-        return `${num} is not a Prime Number`
+    if (num < 2) {
+        return `${num} is not a Prime Number !!`
     }
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {

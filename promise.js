@@ -1,5 +1,5 @@
 
-// ---- promise in JS
+// ---- Promise in JS
 /*
 function add(num) {
     return new Promise((resolve, reject) => {
@@ -17,35 +17,40 @@ add(13).then(res => {
 
 // Callback in js
 
-function add(num, call) {
-    call(null, num + 20)
+// function add(num, call) {
+//     call(null, num + 20)
+// }
+
+// add(14, (rej, res) => {
+//     console.log(res + ' ' + rej);
+// })
+
+/*
+function getMoneyBack(money, callback) {
+    callback(null, money+200)
 }
 
-add(14, (rej, res) => {
-    console.log(res + ' ' + rej);
-})
+getMoneyBack(1200,(err,res)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log(res);
+    }
+    
+})*/
 
-
-
-
-
-const arr = [8, 2, 3, 4, 5, 6, 7, 8]
-
-
-const num = '123';
-console.log(typeof +num);
-
-
-
-console.log(['bat','animal','animesh','hey boy'].sort());
+// Sort it 
+// ['bat','animal','animesh','hey boy']
 
 
 
 // SET-TIMEOUT
 // function set() {
-//     setTimeout(() => console.log('hhi there im from back side'), 5000);
+//     var fun = () => console.log('hhi there im from back side')
+//     setTimeout(fun, 5000);
 //     console.log('hiii');
 // }
+// set()
 
 // SET-INTERVAL
 // let count = 0;
@@ -73,3 +78,37 @@ var print_two = function (call_back) {
 console.log('1');
 print_two(function () { console.log('3'); });
 */
+
+
+async function time(){
+    let promis = new Promise((res,rej)=>{
+        if(res){
+            setTimeout(() => {
+                console.log("5 second")
+            }, 5000);
+        }else{
+            console.log(rej)
+        }
+    })
+
+    function work(){
+        let promis = new Promise((res,rej)=>{
+            if(res){
+                setTimeout(() => {
+                    console.log("1 second")
+                }, 1000);
+            }else{
+                console.log(rej)
+            }
+        })
+
+        return promis
+    }
+
+    console.log(work())
+
+    return promis
+}
+
+console.log(time())
+// 4166 4451 0023 2213

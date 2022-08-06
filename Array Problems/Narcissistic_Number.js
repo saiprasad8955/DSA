@@ -16,13 +16,9 @@
 let result = (num) => {
     let sum = 0;
     num = num.toString().split('')
-
     for (let el of num) {
         sum += Math.pow(el, num.length)
     }
-
-    console.log(num);
-
     if (parseInt(num.join('')) === sum) return true;
     else return false;
 }

@@ -1,4 +1,5 @@
 // Closures
+// used for data privacy, memoize
 function outer() {
     let count = 0;
     return function inner() {
@@ -6,7 +7,7 @@ function outer() {
     }
 }
 var result1 = outer();
-result1()
+
 
 
 
@@ -57,6 +58,7 @@ console.log(add(1,2,3));
 
 
 function add(a){
+    a
     return function (b){
         return function (c){
             return a+b+c
@@ -66,6 +68,8 @@ function add(a){
 
 
 const result = add(23)
+console.log(result);
+
 const result2 = result(34);
 const result3 = result2(23);
 console.log(result3);
@@ -73,9 +77,3 @@ console.log(result3);
 
 const resulter = add(12)(23)(45);
 console.log(resulter);
-
-
-
-
-
-

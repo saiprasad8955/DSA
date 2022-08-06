@@ -12,7 +12,6 @@ function quicksort(arr, left = 0, right = arr.length - 1) {
         // sort ele after pivot
         quicksort(arr, pivotIndex + 1, right)
     }
-
     return arr
 }
 

@@ -1,14 +1,15 @@
+// Insertion Sort
+function insertion(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let curr = i;
+        console.log(arr[i]);
 
-function insertionSort(arr) {
-    let temp;
-    for (let i = 1; i < arr.length; i++) {
-        temp = arr[i];
-        for (var j = i - 1; arr[j] > temp && j > -1; j--) {
-            arr[j + 1] = arr[j];
+        while (curr >= 1 && arr[curr - 1] > arr[curr]) {
+            [arr[curr - 1], arr[curr]] = [arr[curr], arr[curr - 1]];
+            curr--;
         }
-        arr[j + 1] = temp;
     }
-    return arr;
+    return arr
 }
-
-console.log(insertionSort([7, 5, 28, 9, 542, 42, 5]));
+console.log(insertion([7, 5, 28, 9, 542, 42, 5]));
+// [5, 7, 28, 9, 542, 42, 5]
