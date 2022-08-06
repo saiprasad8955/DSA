@@ -1,5 +1,5 @@
 // Call Apply And Bind Method in JS
-
+https://youtu.be/Zb4dPi7CANU // JS REVISION
 // ===========================>>> CALL METHOD
 // Function Borrowing 
 const userM = {
@@ -53,7 +53,7 @@ let flyer = {
 };
 
 
-let run = runner.run.bind(flyer, 20);
+let run = flyer.fly.bind(runner, 20);
 run();
 
 
