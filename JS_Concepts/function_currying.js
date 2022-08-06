@@ -47,6 +47,14 @@ const infos = (msg) => log("info", msg);
 infos('hey');
 
 // With currying
+
+// function curry(func) {
+//     return function(a) {
+//       return function(b) {
+//         return func(a, b);
+//       }
+//     }
+//   }
 // log = curry(log)
 // const error = log("error")
 // const warn = log("warn")
