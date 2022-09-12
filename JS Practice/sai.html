@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="resize: both; background-color: aqua;border: 1px solid red ;box-sizing: border-box; "> Hii there !!! these is a list im printing out below</h1>
+    <h1> These are students</h1>
+    <ul> 
+        <li>Hii Students</li>
+        <li>Im showing that quickly</li>
+        <li id="students"></li>
+    </ul>
+    <script>
+
+    const students =[
+        {name:"Pillu chotasa", Subject:"JS"},
+        {name:"Sai Rathod", Subject:"RUBY"},
+        {name:"Omkar Bacha", Subject:"JAVA"},
+        {name:"Rupesh Zade", Subject:"DJANGO"},
+        {name:"Swarup Zade", Subject:"MONGODB"}
+    ]
+
+// we providing fetchStudent as an callback function
+const addStudent =(student, callback)=>{
+    setTimeout(() => {
+        students.push(student)
+        callback();
+        console.log("Student is Added Successfully")
+    }, 2000);
+}
+
+
+const fetchStudent = ()=>{
+    setTimeout(() => {
+        let str="";
+        students.forEach(element => {
+
+            str += `<li> ${element.name} </li>`
+        });
+        document.getElementById('students').innerHTML = str ;
+        console.log("Student fetched successfully")
+    }, 4000);
+}
+
+let newStudent = {name:"Chickuuuu", Subject:"Spring"}
+
+// pass fetch Student as an callback function 
+addStudent(newStudent,fetchStudent);
+
+// fetchStudent();
+console.log("hiii guys")
+    </script>
+</body>
+</html>
