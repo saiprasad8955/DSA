@@ -47,24 +47,24 @@ getMoneyBack(1200,(err,res)=>{
 
 
 
-async function time(){
-    let promis = new Promise((res,rej)=>{
-        if(res){
+async function time() {
+    let promis = new Promise((res, rej) => {
+        if (res) {
             setTimeout(() => {
                 console.log("5 second")
             }, 5000);
-        }else{
+        } else {
             console.log(rej)
         }
     })
 
-    function work(){
-        let promis = new Promise((res,rej)=>{
-            if(res){
+    function work() {
+        let promis = new Promise((res, rej) => {
+            if (res) {
                 setTimeout(() => {
                     console.log("1 second")
                 }, 1000);
-            }else{
+            } else {
                 console.log(rej)
             }
         })
@@ -79,3 +79,6 @@ async function time(){
 
 console.log(time())
 // 4166 4451 0023 2213
+
+
+

@@ -37,6 +37,7 @@ class BST {
     }
 
     // LEVEL ORDER TRAVERSAL
+    // BREADTH FIRST SEARCH
     BFS() {
         // level order traversal
         let currentNode = this.root;
@@ -53,12 +54,12 @@ class BST {
     }
 
     // Depth First Search
-    DFSpreorder(){
+    DFSpreorder() {
         let results = [];
-        function traverse(currentNode){
+        function traverse(currentNode) {
             results.push(currentNode.value);
-            if(currentNode.left) traverse(currentNode.left)
-            if(currentNode.right) traverse(currentNode.right)
+            if (currentNode.left) traverse(currentNode.left)
+            if (currentNode.right) traverse(currentNode.right)
         }
         traverse(this.root);
         return results;
@@ -79,7 +80,7 @@ myTree.insert(60);
 myTree.insert(80);
 let arr = myTree.BFS()
 console.log(arr);
-let DFSPRE= myTree.DFSpreorder();
+let DFSPRE = myTree.DFSpreorder();
 console.log(DFSPRE);
 
 console.log(myTree);

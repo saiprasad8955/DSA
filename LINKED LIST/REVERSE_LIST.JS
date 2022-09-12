@@ -1,5 +1,5 @@
 // REVERSE LINKED LIST
-reverseList = (head) => {
+const reverseList = (head) => {
     let curr = head;
     let prev = null, next;
     while (curr !== null) {
@@ -13,3 +13,5 @@ reverseList = (head) => {
 
 
 const result = reverseList(LinkedList)
+
+

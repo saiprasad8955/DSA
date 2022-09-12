@@ -11,8 +11,8 @@ function ispalindrome(str) {
     let right = str.length - 1;
     while (left < right) {
         if (str[left] !== str[right]) return 0;
-        left++;
-        right--;
+        left++  ;
+        right-- ;
     }
     return 1;
 }

@@ -22,4 +22,17 @@ const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 console.log(bubbleSort(arr));
 
+// program to generate a multiplication table
 
+// take input from the user
+// const number = parseInt(prompt('Enter an integer: '));
+
+//creating a multiplication table
+for(let i = 1; i <= 10; i++) {
+
+    // multiply i with number
+    let result = i * 3;
+
+    // display the result
+    console.log(`${result}`);
+}
